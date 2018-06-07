@@ -1,0 +1,28 @@
+<head>
+<script type="text/javascript">
+function combString(str){
+     var lenStr = str.length;
+     var result = [];
+     var indexCurrent = 0;
+
+     while(indexCurrent < lenStr){
+         var char = str.charAt(indexCurrent);
+         var x;
+         var arrTemp = [char];
+
+         for(x in result) {
+             arrTemp.push(""+result[x]+char);
+         }
+         result = result.concat(arrTemp);
+
+         indexCurrent++;
+     }
+
+     return result;
+}
+
+document.write(combString("some"));
+</script>
+</head>
+
+s,o,so,m,sm,om,som,e,se,oe,soe,me,sme,ome,some
