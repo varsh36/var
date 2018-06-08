@@ -1,0 +1,23 @@
+<html>
+<body>
+<p>Click the button to display the msg</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var num = Math.floor(Math.random()); 
+    var msg;
+    if (num==18) {
+        msg = "Good work";
+    } else {
+        msg = "not matched";
+    }
+    document.getElementById("demo").innerHTML =msg;
+}
+</script>
+</body>
+</html>
+
